@@ -1,0 +1,221 @@
+body{
+background-color:#f4f7fb;
+margin:0;
+font-family:Arial,sans-serif;
+}
+
+/* NAVBAR */
+
+header{
+display:flex;
+align-items:center;
+justify-content:space-between;
+background-color:#0F2A44;
+padding:20px;
+border-bottom:4px solid #FBBF24;
+}
+
+#txtfoto{
+display:flex;
+align-items:center;
+gap:15px;
+}
+
+#txtfoto img{
+width:80px;
+}
+
+#kayo{
+color:#FBBF24;
+margin:0;
+}
+
+nav{
+display:flex;
+gap:25px;
+}
+
+nav a{
+text-decoration:none;
+color:white;
+font-size:18px;
+transition:.3s;
+}
+
+nav a:hover
+
+
+
+#cima{
+color:#0F2A44;
+font-size:45px;
+margin:30px;
+text-align:center;
+}
+/* INTRODUÇÃO */
+
+#teste3{
+display:flex;
+justify-content:center;
+align-items:center;
+padding:20px;
+}
+
+#bombom{
+font-size:25px;
+text-align:center;
+color:#333;
+}
+
+
+
+#partesuperior{
+display:flex;
+justify-content:center;
+gap:40px;
+padding:30px;
+}
+
+#teste2,
+#parte_2{
+background-color:white;
+width:400px;
+padding:30px;
+border-radius:20px;
+box-shadow:0 5px 15px rgba(0,0,0,.15);
+}
+
+.titulo{
+background-color:#1E3A8A;
+color:white;
+padding:15px;
+border-radius:15px;
+text-align:center;
+}
+
+.texto{
+font-size:22px;
+color:#0F2A44;
+}
+
+.paragrafo{
+font-size:18px;
+color:#444;
+}
+
+
+
+input,
+select{
+width:90%;
+padding:12px;
+border-radius:12px;
+border:1px solid #ccc;
+font-size:16px;
+}
+
+#mensagem{
+height:150px;
+}
+
+#botao-enviar{
+margin-top:20px;
+padding:15px;
+width:100%;
+border:none;
+border-radius:15px;
+background:#1E3A8A;
+color:white;
+font-size:18px;
+cursor:pointer;
+transition:.3s;
+}
+
+#botao-enviar:hover{
+background:#FBBF24;
+color:black;
+}
+
+
+
+#redessociais{
+text-align:center;
+color:#0F2A44;
+margin-top:40px;
+}
+
+#a{
+display:flex;
+justify-content:center;
+gap:80px;
+background-color:#0F2A44;
+padding:30px;
+}
+
+.redes{
+text-align:center;
+}
+
+.redes img{
+width:50px;
+}
+
+.redes p{
+color:white;
+}
+
+
+.acessibilidade-container{
+position:fixed;
+bottom:20px;
+right:20px;
+}
+
+.btn-acessibilidade{
+padding:10px;
+background-color:#0056b3;
+color:white;
+border:none;
+border-radius:10px;
+cursor:pointer;
+}
+
+
+
+@media(max-width:800px){
+
+
+header{
+    flex-direction:column;
+    gap:15px;
+}
+
+nav{
+    flex-wrap:wrap;
+    justify-content:center;
+}
+
+#teste3{
+    flex-direction:column;
+}
+
+#partesuperior{
+    flex-direction:column;
+    align-items:center;
+}
+
+#teste2,
+#parte_2{
+    width:85%;
+}
+
+#a{
+    flex-direction:column;
+    align-items:center;
+    gap:30px;
+}
+
+#cima{
+    font-size:35px;
+}
+}

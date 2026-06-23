@@ -1,0 +1,98 @@
+body {
+font-family: Arial, sans-serif;
+background-color: #f4f7f6;
+height: 100vh;
+margin: 0;
+}
+.container {
+background: white;
+padding: 30px;
+border-radius: 10px;
+box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+text-align: center;
+width: 300px;
+}
+h2 { color: #333; margin-bottom: 20px; }
+input {
+width: 90%;
+padding: 10px;
+margin: 10px 0;
+border: 1px solid #ccc;
+border-radius: 5px;
+font-size: 16px;
+}
+button {
+width: 98%;
+padding: 12px;
+background-color: #3498db;
+color: white;
+border: none;
+border-radius: 5px;
+font-size: 16px;
+cursor: pointer;
+font-weight: bold;
+}
+button:hover { background-color: #2980b9; }
+#resultado {
+margin-top: 20px;
+padding: 15px;
+border-radius: 5px;
+font-size: 18px;
+font-weight: bold;
+display: none; 
+}
+.aprovado { background-color: #d4edda; color: #155724; border: 1px solid #c3e6cb; }
+.reprovado { background-color: #f8d7da; color: #721c24; border: 1px solid #f5c6cb; }
+body {
+    background-color: #F9FAFB;
+    margin: 0;
+    overflow-x: hidden;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+img {
+    width: 120px;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background:linear-gradient(to right, #0F2A44, #1E3A8A);
+    padding: 30px;
+    box-shadow: 0px 10px 25px rgba(0, 0, 0, 0.2);
+    border-bottom: 4px solid #FBBF24;
+    width: 100%;
+    height: 50px;
+}
+
+#txtfoto {
+    color: #0F2A44;
+    display: flex;
+    align-items: center;
+}
+
+.txtnormal {
+    color: #4B5563;
+}
+
+nav {
+    display: flex;
+    gap: 50px;
+}
+
+a {
+    text-decoration: none;
+    color: #ffffff;
+    margin-right: 200px;
+    font-size: 20px;
+}
+
+#kayo {
+    color: #FBBF24;
+}
+
+
+a:hover {
+    color: #FBBF24;
+}

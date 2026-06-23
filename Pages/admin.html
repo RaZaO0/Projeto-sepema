@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../estilo/style.css">
+
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0 auto;
+            background-color: #fbfbfb;
+            color: #222;
+            font-size: 1rem;
+        }
+
+        .acessibilidade-container {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            z-index: 1000;
+        }
+
+        .btn-acessibilidade {
+            padding: 10px 15px;
+            font-size: 0.9rem;
+            cursor: pointer;
+            background-color: #0056b3;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            font-weight: bold;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+            transition: all 0.3s ease;
+        }
+
+        .btn-acessibilidade:hover {
+            background-color: #003d82;
+            transform: translateY(-2px);
+        }
+
+        body.fonte-dislexia,
+        body.fonte-dislexia * {
+            font-family: 'Comic Sans MS', 'Comic Sans', cursive !important;
+        }
+
+        body.texto-grande,
+        body.texto-grande * {
+            font-size: 1.35rem !important;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="acessibilidade-container">
+        <button id="botaoFonte" class="btn-acessibilidade">Ativar Fonte para Dislexia</button>
+        <button id="botaoTamanho" class="btn-acessibilidade">Aumentar Texto</button>
+    </div>
+
+
+
+       <header>
+        <div id="txtfoto">
+            <img src="pasta fotos/logo-removebg-preview.png" alt="foto sepema">
+            <h1 id="kayo">E.E sepema</h1>
+        </div>
+
+
+
+        <nav>
+    <a href="index_Kayo.html">Início</a>
+    <a href="sobrenos_kaylany.html">Sobre Nós</a>
+    <a href="matricula_Isaque.html">Matrícula</a>
+    <a href="contato_mirella.html">Contato</a>
+    <a href="admin.html">Admin</a>
+</nav>
+
+
+</header>
+
+    </header>
+
+
+
+
+    <div class="container">
+        <div id="login" class="card">
+            <h1>Acesso restrito</h1>
+            <p>Digite sua senha de admin</p>
+            <form id="formLogin">
+                <input type="password" id="senha" placeholder="Digite sua senha..." required>
+                <button type="submit">Acessar</button>
+            </form>
+        </div>
+        <div id="conteudoAdm" style="display: none;" class="card">
+            <div class="card">
+                <h1>Painel ADM</h1>
+                <p>Confira</p>
+            </div>
+            <div id="lista"></div>
+        </div>
+    </div>
+
+        <script>
+        const botao = document.getElementById('botaoFonte');
+        botao.addEventListener('click', () => {
+            document.body.classList.toggle('fonte-dislexia');
+            if (document.body.classList.contains('fonte-dislexia')) {
+                botao.textContent = "Desativar Fonte para Dislexia";
+            } else {
+                botao.textContent = "Ativar Fonte para Dislexia";
+            }
+        });
+
+        const botaoTamanho = document.getElementById('botaoTamanho');
+        botaoTamanho.addEventListener('click', () => {
+            document.body.classList.toggle('texto-grande');
+            if (document.body.classList.contains('texto-grande')) {
+                botaoTamanho.textContent = "Diminuir Texto";
+            } else {
+                botaoTamanho.textContent = "Aumentar Texto";
+            }
+        });
+    </script>
+
+    <script src="../java/admin.js"></script>
+</body>
+</html>

@@ -1,0 +1,364 @@
+/* index.css com navbar alterada */
+body {
+    background-color: #F9FAFB;
+    margin: 0;
+    overflow-x: hidden;
+    font-family: system-ui, sans-serif;
+}
+
+img {
+    width: 120px;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #0F2A44;
+    padding: 20px;
+    border-bottom: 4px solid #FBBF24;
+}
+
+#txtfoto {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+#txtfoto img {
+    width: 80px;
+}
+
+#kayo {
+    color: #FBBF24;
+    margin: 0;
+}
+
+nav {
+    display: flex;
+    gap: 25px;
+}
+
+nav a {
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+}
+
+nav a:hover {
+    color: #FBBF24;
+}
+
+#hero  {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 40px;
+    gap: 20px;
+}
+
+.img {
+    width: 50%;
+}
+
+.img img {
+    width: 100%;
+    border-radius: 20px;
+    box-shadow: 0px 10px 25px rgba(0, 0, 0, 0.2);
+}
+
+.texto  {
+    font-size: 30px;
+    width: 50%;
+    color: #1E3A8A;
+}
+
+h3 {
+    font-size: 60px;
+}
+
+.img img:hover {
+   transform: scale(1.01);
+}
+
+#cardes {
+    display: flex;
+    gap: 20px;
+    justify-content: space-evenly;
+    font-size: 20px;
+}
+
+.cards {
+    background-color: #EFF6FF;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    border-radius: 20px;
+    height: auto;
+    text-align: center;
+    margin-top: 20px;
+}
+
+#porque {
+    display: flex;
+    justify-content: center;
+    font-size: 30px;
+    color: #1E3A8A;
+}
+
+h4 {
+    color: #1E3A8A;
+}
+
+.cards:hover {
+    transform: scale(1.02);
+    
+}
+
+
+
+
+.container{
+    width: 100%;
+    min-height: 80vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    padding: 40px;
+}
+
+
+#login{
+    background-color: white;
+
+    width: 400px;
+
+    padding: 40px;
+
+    border-radius: 20px;
+
+    box-shadow: 0px 10px 25px rgba(0,0,0,0.15);
+
+    text-align: center;
+}
+
+#login h1{
+    color: #1E3A8A;
+    margin-bottom: 10px;
+}
+
+#login p{
+    color: #4B5563;
+    margin-bottom: 25px;
+}
+
+
+#formLogin{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+#senha{
+    padding: 15px;
+
+    border-radius: 10px;
+
+    border: 2px solid #d1d5db;
+
+    font-size: 16px;
+
+    transition: 0.3s;
+}
+
+#senha:focus{
+    outline: none;
+    border-color: #1E3A8A;
+}
+
+
+#formLogin button{
+    padding: 15px;
+
+    border: none;
+
+    border-radius: 10px;
+
+    background-color: #1E3A8A;
+
+    color: white;
+
+    font-size: 16px;
+
+    font-weight: bold;
+
+    cursor: pointer;
+
+    transition: 0.3s;
+}
+
+#formLogin button:hover{
+    background-color: #0F2A44;
+    transform: scale(1.02);
+}
+
+
+#conteudoAdm{
+    width: 90%;
+    max-width: 900px;
+
+    background-color: white;
+
+    padding: 30px;
+
+    border-radius: 20px;
+
+    box-shadow: 0px 10px 25px rgba(0,0,0,0.15);
+}
+
+#lista{
+    margin-top: 20px;
+}
+
+
+
+
+
+
+
+/*Acima codigo do Kayo*/
+/*Acima codigo do Kayo*/
+
+
+/*Abaixo sera o codigo que o Isaque fez*/
+/*Abaixo sera o codigo que o Isaque fez*/
+
+
+
+
+#partesuperior {
+    display: flex;
+    justify-content: space-between;
+    margin-left: 50px;
+    margin-right: 50px;
+ 
+}
+ 
+#parte_comorealizar {
+    background-color: rgb(241, 253, 255);
+    display: flex;
+    justify-content: space-between;
+    gap: 60px;
+}
+ 
+.partes_matricula {
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(210, 220, 227);
+    border-radius: 15px;
+    padding: 10px;
+    margin-top:10px;
+    margin-left: 50px;
+}
+ 
+.partes_matricula:hover {
+    border: rgb(47, 85, 255) solid 3px;
+}
+ 
+.titulopartes {
+    color: rgb(0, 0, 94);
+    font-size: 25px;
+}
+ 
+#documentos {
+    background-color: rgb(188, 217, 255);
+    color: rgb(0, 0, 177);
+    padding: 35px;
+    border-radius: 15px;
+    margin-top:10px ;
+    margin-right: 50px;
+    margin-bottom: 190px;
+}
+
+ul {
+    padding: 20px;
+}
+
+li {
+    font-size: 18px;
+    padding: 10px;
+}
+ 
+#butaocontato {
+ background-color: rgb(0, 0, 49);
+    color: aliceblue;
+    font-size: 20px;
+    width: 300px;
+    border-radius: 10px;
+    border: none;
+    height: 60px;
+    cursor: pointer;
+}
+
+#butaocontato:hover {
+    transform: scale(1.03);
+}
+ 
+ 
+#teste {
+    width: 70%;
+}
+ 
+h2 {
+    margin-left: 50px;
+    color: rgb(0, 0, 68);
+}
+ 
+h4 {
+    color: rgb(0, 0, 68);
+    font-size: 20px;
+}
+ 
+#partematricula {
+    display: flex;
+    justify-content: space-around;
+    gap: 200px;
+    background-color: #c7cbff;
+    margin-left: 40px;
+    margin-right: 40px;
+    margin-top: 20px;
+    border-radius: 10px;
+    padding: 20px;
+}
+ 
+#botaomatricula {
+    background-color: rgb(0, 0, 49);
+    color: aliceblue;
+    font-size: 20px;
+    width: 300px;
+    border-radius: 10px;
+    border: none;
+    height: 100px;
+}
+ 
+#botaomatricula:hover {
+    transform: scale(1.01);
+    cursor: pointer;
+    border: 2px solid white;
+}
+ 
+.img_crds {
+    width: 20%;
+}
+ 
+h1 {
+    border-bottom: 2px solid rgb(78, 78, 255);
+    font-size: 40px;
+    color: rgb(0, 0, 62);
+}
+ 
+p {
+    color: rgb(0, 0, 116);
+    font-size: 20px;
+}

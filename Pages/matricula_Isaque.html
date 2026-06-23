@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>matricula</title>
+    <link rel="stylesheet" href="../estilo/style.css">
+
+<style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0 auto;
+            background-color: #fbfbfb;
+            color: #222;
+            font-size: 1rem;
+        }
+
+        .acessibilidade-container {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            z-index: 1000;
+        }
+
+        .btn-acessibilidade {
+            padding: 10px 15px;
+            font-size: 0.9rem;
+            cursor: pointer;
+            background-color: #0056b3;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            font-weight: bold;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+            transition: all 0.3s ease;
+        }
+
+        .btn-acessibilidade:hover {
+            background-color: #003d82;
+            transform: translateY(-2px);
+        }
+
+        body.fonte-dislexia,
+        body.fonte-dislexia * {
+            font-family: 'Comic Sans MS', 'Comic Sans', cursive !important;
+        }
+
+        body.texto-grande,
+        body.texto-grande * {
+            font-size: 1.35rem !important;
+        }
+    </style>
+
+
+</head>
+<body>
+
+
+    <div class="acessibilidade-container">
+        <button id="botaoFonte" class="btn-acessibilidade">Ativar Fonte para Dislexia</button>
+        <button id="botaoTamanho" class="btn-acessibilidade">Aumentar Texto</button>
+    </div>
+
+    <header>
+        <div id="txtfoto">
+            <img src="../pasta fotos/logo-removebg-preview.png" alt="foto sepema">
+            <h1 id="kayo">E.E Sepema</h1>
+        </div>
+
+         <nav>
+    <a href="index_Kayo.html">Início</a>
+    <a href="sobrenos_kaylany.html">Sobre Nós</a>
+    <a href="matricula_Isaque.html">Matrícula</a>
+    <a href="contato_mirella.html">Contato</a>
+    <a href="admin.html">Admin</a>
+</nav>
+    </header>
+ 
+     
+    <div id="partesuperior">
+        <div>
+        <h1>Matrícula</h1>
+            <p>Estamos felizes em receber você e seu filho.<br> O processo de matrícula será rápido e fácil</p>
+        </div>
+        <div>
+        <img src="../images.png" alt="">
+        </div>
+    </div>
+ 
+    <h2>Como realizar a matrícula</h2>
+    <div id="parte_comorealizar">
+        <div id="teste">
+            <div class="partes_matricula">
+                <h4 class="titulopartes">Entre em contato</h4>
+                <p>
+                Fale conosco pelos nossos canais de atendimento para tirar <b>Dúvidas e Verificar vagas</b>
+                </p>
+            </div>
+ 
+            <div class="partes_matricula">
+                <h4 class="titulopartes">Documentação</h4>
+                <p>Separe os documentos necessários (listados ao lado)</p>
+            </div>
+           
+            <div class="partes_matricula">
+                <h4 class="titulopartes">Preenchimento</h4>
+                <p><b>Preencha a ficha de matrícula</b> com os dados do aluno e responsável
+                </p>
+            </div>
+ 
+            <div class="partes_matricula">
+                <h4 class="titulopartes">Confirmação</h4>
+                <p>Após a <b>análise dos documentos</b> <br></p>
+            </div>
+        </div>
+   
+        <div id="documentos">
+            <h2>Documentos necessários</h2>
+            <ul>
+                <li>Certidão de nascimento</li>
+                <li>CPF do aluno</li>
+                <li>Comprovante de residência</li>
+                <li>Carteira de vascinação</li>
+                <li>Histórico escolar ou declaração de transferência</li>
+                <li>RG ou CPF dos responsáveis</li>
+            </ul>
+            <br>
+            <div>
+                <h2>Duvidas?</h2>
+                <p>Caso houver alguma dúvida sobre os <b>documentos</b> clique no botão abaixo para acessar (contato)</p>
+                <button id="butaocontato"  onclick="window.location.href='contato_mirella.html';">Entre em contato</button>
+            </div>
+        </div>
+    </div>
+   
+    <div id="partematricula">
+        <div>
+            <h2>Vagas limitadas !</h2>
+            <p>Garanta ja a vaga do seu filho e faça parte da nossa comunidade escolar</p>
+        </div>
+        <button type="submit" id="botaomatricula" onclick="window.location.href='formulario.html';">Faça sua matrícula</button>
+    </div>
+
+
+        <script>
+        const botao = document.getElementById('botaoFonte');
+        botao.addEventListener('click', () => {
+            document.body.classList.toggle('fonte-dislexia');
+            if (document.body.classList.contains('fonte-dislexia')) {
+                botao.textContent = "Desativar Fonte para Dislexia";
+            } else {
+                botao.textContent = "Ativar Fonte para Dislexia";
+            }
+        });
+
+        const botaoTamanho = document.getElementById('botaoTamanho');
+        botaoTamanho.addEventListener('click', () => {
+            document.body.classList.toggle('texto-grande');
+            if (document.body.classList.contains('texto-grande')) {
+                botaoTamanho.textContent = "Diminuir Texto";
+            } else {
+                botaoTamanho.textContent = "Aumentar Texto";
+            }
+        });
+    </script>
+</body>
+</html>
+ 

@@ -1,0 +1,153 @@
+body{
+background-color:#F9FAFB;
+margin:0;
+overflow-x:hidden;
+font-family:system-ui,-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Oxygen,Ubuntu,Cantarell,'Open Sans','Helvetica Neue',sans-serif;
+
+
+display:flex;
+flex-direction:column;
+align-items:center;
+
+
+}
+
+/* NAVBAR */
+
+header{
+width:100%;
+display:flex;
+align-items:center;
+justify-content:space-between;
+background-color:#0F2A44;
+padding:20px;
+border-bottom:4px solid #FBBF24;
+box-sizing:border-box;
+}
+
+#txtfoto{
+display:flex;
+align-items:center;
+gap:15px;
+}
+
+#txtfoto img{
+width:80px;
+}
+
+#kayo{
+color:#FBBF24;
+margin:0;
+}
+
+nav{
+display:flex;
+gap:25px;
+}
+
+nav a{
+text-decoration:none;
+color:white;
+font-size:18px;
+transition:.3s;
+}
+
+nav a:hover
+
+/* CONTEÚDO */
+
+h1{
+text-align:center;
+margin-top:40px;
+margin-bottom:40px;
+color:#0F2A44;
+font-size:42px;
+border-bottom:3px solid #FBBF24;
+display:inline-block;
+padding-bottom:10px;
+}
+
+p{
+color:#0F2A44;
+font-size:18px;
+}
+
+fieldset{
+border-radius:12px;
+border:1px solid #d1d5db;
+}
+
+form{
+background-color:white;
+width:90%;
+max-width:600px;
+padding:40px;
+border-radius:20px;
+box-shadow:0 10px 25px rgba(0,0,0,.12);
+display:flex;
+flex-direction:column;
+gap:18px;
+margin-bottom:50px;
+}
+
+input,
+select{
+padding:15px;
+border-radius:12px;
+border:2px solid #d1d5db;
+font-size:16px;
+transition:.3s;
+background-color:#F9FAFB;
+}
+
+input:focus,
+select:focus{
+outline:none;
+border-color:#1E3A8A;
+box-shadow:0 0 10px rgba(30,58,138,.2);
+}
+
+#butaoenviar_resposta{
+width:100%;
+padding:16px;
+background:linear-gradient(to right,#0F2A44,#1E3A8A);
+border:none;
+border-radius:12px;
+color:white;
+font-size:18px;
+font-weight:bold;
+cursor:pointer;
+transition:.3s;
+}
+
+#butaoenviar_resposta:hover{
+transform:scale(1.02);
+background:linear-gradient(to right,#1E3A8A,#2563EB);
+}
+
+/* RESPONSIVO */
+
+@media(max-width:800px){
+
+
+header{
+    flex-direction:column;
+    gap:15px;
+}
+
+nav{
+    flex-wrap:wrap;
+    justify-content:center;
+}
+
+form{
+    width:95%;
+    padding:25px;
+}
+
+h1{
+    font-size:32px;
+}
+
+
+}
