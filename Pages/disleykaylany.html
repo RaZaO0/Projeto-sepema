@@ -8,7 +8,7 @@
 <body>
   
     <button id="botaoFonte" class="btn-acessibilidade"> Ativar Fonte para Dislexia</button>
-    <button id="botaoTamanho" class="btn-acessibilidade"> Aumentar Texto</button>
+    <button id="botaoTamanho" class="btn-acessibilidade"> Diminuir Texto</button>
 
     <script>
       
@@ -29,9 +29,9 @@
             document.body.classList.toggle('texto-grande');
 
             if (document.body.classList.contains('texto-grande')) {
-                botaoTamanho.textContent = " Diminuir Texto";
-            } else {
                 botaoTamanho.textContent = " Aumentar Texto";
+            } else {
+                botaoTamanho.textContent = " Diminuir Texto";
             }
         });
     </script>
