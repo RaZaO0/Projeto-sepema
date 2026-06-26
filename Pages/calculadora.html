@@ -3,9 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SEPEMA</title>
-    <link rel="stylesheet" href="../estilo/style.css">
-    <style>
+    <title>calculadora de Media escolar</title>
+    <link rel="stylesheet" href="../estilo/calcukaylany.css">
+
+<style>
         body {
             font-family: Arial, sans-serif;
             line-height: 1.6;
@@ -53,65 +54,50 @@
             font-size: 1.35rem !important;
         }
     </style>
+
 </head>
 <body>
+
     <div class="acessibilidade-container">
         <button id="botaoFonte" class="btn-acessibilidade">Ativar Fonte para Dislexia</button>
         <button id="botaoTamanho" class="btn-acessibilidade">Diminuir Texto</button>
     </div>
 
-    <header>
+
+       <header>
         <div id="txtfoto">
             <img src="../pasta fotos/logo-removebg-preview.png" alt="foto sepema">
             <h1 id="kayo">E.E sepema</h1>
         </div>
 
+
+
         <nav>
-    <a href="index_Kayo.html">Início</a>
-    <a href="sobrenos_kaylany.html">Sobre Nós</a>
-    <a href="matricula_Isaque.html">Matrícula</a>
-    <a href="contato_mirella.html">Contato</a>
+    <a href="index.html">Início</a>
+    <a href="sobrenos.html">Sobre Nós</a>
+    <a href="matricula.html">Matrícula</a>
+    <a href="contato.html">Contato</a>
     <a href="admin.html">Admin</a>
+    <a href="calculadora.html">Calcule</a>
 </nav>
-    </header>
 
-    <div id="hero">
-        <div class="texto">
-            <h3>Educação que transforma <br> o hoje <br> e constrói o amanhã</h3>
-            <p class="txtnormal">No sepema incentivamos o aprendizado, o respeito <br> e o desenvolvimento integral dos nossos alunos</p>
-        </div>
-        
-        <div class="img">
-            <img id="imagem" src="../pasta fotos/foto escola.png" alt="logo">
-        </div>
-    </div>
 
-    <h2 id="porque">Porque escolher o SEPEMA</h2>
-    <div id="cardes">
-        <div class="cards" id="java-crd1">
-            <img src="../pasta fotos/livro__1_-removebg-preview.png" alt="livro">
-            <h4>Ensino de qualidade</h4>
-            <p class="txtnormal" id="txtjava1">Metodologias modernas <br>e professores capacitados</p>
-        </div>
+</header>
 
-        <div class="cards" id="java-crd2">
-            <img src="../pasta fotos/Design_sem_nome-removebg-preview.png" alt="duas_pessoas">
-            <h4>Formação integral</h4>
-            <p class="txtnormal" id="txtjava2">Desenvolvimento acadêmico, <br>socioemocional e valores</p>
-        </div>
 
-        <div class="cards" id="java-crd3">
-            <img src="../pasta fotos/escola-removebg-preview.png" alt="escola">
-            <h4>Estrutura completa</h4>
-            <p class="txtnormal" id="txtjava3">Ambientes modernos, seguros, e <br>equipados para melhor desempenho</p>
-        </div>
 
-        <div class="cards" id="java-crd4">
-            <img src="../pasta fotos/trofeu-removebg-preview.png" alt="trofeu">
-            <h4>Incentivo ao futuro</h4>
-            <p class="txtnormal" id="txtjava4">projetos e atividades que incentivam talentos <br>e preparam para o amanhã</p>
-        </div>
-    </div>
+
+<div class="container-calculadora">
+<h2>Minha Média Escolar</h2>
+<input type="number" id="nota1" placeholder="Nota do 1º Bimestre" min="0" max="10" step="0.1">
+<input type="number" id="nota2" placeholder="Nota do 2º Bimestre" min="0" max="10" step="0.1">
+<input type="number" id="nota3" placeholder="Nota do 3º Bimestre" min="0" max="10" step="0.1">
+<input type="number" id="nota4" placeholder="Nota do 4º Bimestre" min="0" max="10" step="0.1">
+<button onclick="calcularMedia()">Calcular Resultado</button>
+
+<div id="resultado"></div>
+</div>
+<script src="../java/calcukaylany.js"></script>
 
     <script>
         const botao = document.getElementById('botaoFonte');
@@ -135,6 +121,5 @@
         });
     </script>
 
-    <footer>&copy direitos reservados SEPEMA</footer>
 </body>
 </html>

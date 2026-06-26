@@ -53,46 +53,41 @@ body {
 img {
     width: 120px;
 }
-
 header {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    background:linear-gradient(to right, #0F2A44, #1E3A8A);
-    padding: 30px;
-    box-shadow: 0px 10px 25px rgba(0, 0, 0, 0.2);
+    background-color: #0F2A44;
+    padding: 20px;
     border-bottom: 4px solid #FBBF24;
-    width: 100%;
-    height: 50px;
 }
 
 #txtfoto {
-    color: #0F2A44;
     display: flex;
     align-items: center;
+    gap: 15px;
 }
 
-.txtnormal {
-    color: #4B5563;
-}
-
-nav {
-    display: flex;
-    gap: 50px;
-}
-
-a {
-    text-decoration: none;
-    color: #ffffff;
-    margin-right: 200px;
-    font-size: 20px;
+#txtfoto img {
+    width: 80px;
 }
 
 #kayo {
     color: #FBBF24;
+    margin: 0;
 }
 
+nav {
+    display: flex;
+    gap: 25px;
+}
 
-a:hover {
+nav a {
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+}
+
+nav a:hover {
     color: #FBBF24;
 }
