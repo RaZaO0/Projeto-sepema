@@ -49,8 +49,11 @@ nav a:hover
 #cima{
 color:#0F2A44;
 font-size:45px;
-margin:30px;
-text-align:center;
+margin-left: 7234px;
+}
+
+#baixo {
+    text-align: center;
 }
 /* INTRODUÇÃO */
 
@@ -215,7 +218,4 @@ nav{
     gap:30px;
 }
 
-#cima{
-    font-size:35px;
-}
 }
