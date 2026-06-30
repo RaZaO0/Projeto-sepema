@@ -1,8 +1,16 @@
-const btn = document.getElementById("botao-enviar");
-const area = document.getElementById("area");
-
+const btn = document.getElementById("botao-enviar")
 btn.addEventListener("click", function() {
-    const texto = document.createElement("p");
-    texto.textContent = "Sua mensagem foi enviada!!";
-    area.appendChild(texto);
+
+const btn = document.getElementById("botao-enviar");
+const nome = document.getElementById("nome").value.trim();
+const email = document.getElementById("email").value.trim();
+const assunto = document.getElementById("assunto").value.trim();
+const mensagem = document.getElementById("mensagem").value.trim();
+
+    if(!nome ||!email ||!assunto ||!mensagem) {
+    alert("Preencha todos os campos!")
+} else {
+    alert("Mensagem enviada com sucesso!")
+}
+
 });
