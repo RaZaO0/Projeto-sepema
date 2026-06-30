@@ -148,33 +148,32 @@
 <form id="kkk">
     <label for="nome">Nome completo</label>
 <br>
-    <input class="socorro" type="text" id="nome" name="nome" placeholder="Seu nome">
+    <input class="socorro" type="text" id="nome" name="nome" placeholder="Seu nome" required>
  
     <br><br>
  
     <label for="email">Email</label>
 <br>
-    <input class="socorro" type="text" id="email" name="email" placeholder="seu@email.com">
+    <input class="socorro" type="text" id="email" name="email" placeholder="seu@email.com" required>
  
    <br><br>
  
     <label for="assunto">Assunto</label>
 <br>    
-    <select class="socorro" name="assunto" id="assunto">
+    <select class="socorro" name="assunto" id="assunto" required>
         <option value="" selected disabled id="optionno">Selecione o assunto</option>
-        <option value="nmatricula">não estou conseguindo enviar a matricula</option>
-        <option value="duvida">gostaria de tirar uma duvida </option>
-        <option value="outro">out<ro/option>
+        <option value="nmatricula" required>não estou conseguindo enviar a matricula</option>
+        <option value="duvida" required>gostaria de tirar uma duvida </option>
+        <option value="outro" required>out<ro/option>
     </select>
     <br><br>
    <label for="mensagem">Mensagem</label>
 <br>
-    <input class="socorro" type="text" id="mensagem" name="mensagem" placeholder="Escreva sua mensagem aqui">   
+    <input class="socorro" type="text" id="mensagem" name="mensagem" placeholder="Escreva sua mensagem aqui" required>   
     <br>
 
 </form>
  <button id="botao-enviar">Enviar mensagem</button>
-    <div id="area"></div>
 </div>
  
 </div>
