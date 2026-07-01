@@ -21,7 +21,7 @@ const divResultado = document.getElementById('resultado');
 const mediaFinal = (n1 + n2 + n3 + n4);
 
 if (n1 > 25 || n2 > 25 || n3 >25 || n4 > 25) {
-        alert("teste");
+        alert("Por favor insira um valor valido");
         return;
     }
 
