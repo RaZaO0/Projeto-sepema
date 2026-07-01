@@ -162,7 +162,7 @@ app.post ("/admin", (req,res) => {
         })
     }
 
-    if (senha === "admin123"){
+    if (senha === "aquiseestuda"){
         tentativa = 0
         return res.json ({autenticado: true});
     }tentativa++

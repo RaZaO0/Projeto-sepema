@@ -366,3 +366,47 @@ p {
 #ESCOLHIDO {
     border-bottom: solid 1px #FBBF24;
 }
+
+.aluno{
+    background-color: #0F2A44;
+    border-radius: 15px;
+    padding: 10px;
+    margin-top: 10px;
+}
+
+.padimin{
+    color: #F9FAFB;
+}
+
+#divnomeADMIN{
+    background-color: #10385e;
+    padding: 10px;
+    border-radius: 15px;
+}
+
+#nomeAlunoADMIN{
+    color: #FBBF24;
+}
+
+#botaoADmin{
+    background-color: #10385e;
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+    color: #EFF6FF;
+}
+
+#botaosair {
+    margin-left: 800px;
+    background-color: #10385e;
+    padding: 15px;
+    color: #F9FAFB;
+    border-radius: 15px;
+    width: 100px;
+    border: none;
+    cursor: pointer;
+}
+
+#botaosair:hover {
+    transform: scale(1.03);
+}

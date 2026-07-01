@@ -292,3 +292,37 @@ nav{
 #ESCOLHIDO {
     border-bottom: solid 1px #FBBF24;
 }
+
+.titulo{
+background-color:#1E3A8A;
+color:white;
+padding:15px;
+border-radius:15px;
+text-align:center;
+}
+
+.texto{
+font-size:22px;
+color:#0F2A44;
+}
+
+.paragrafo{
+font-size:18px;
+color:#444;
+}
+
+#partesuperior{
+display:flex;
+justify-content:center;
+gap:40px;
+padding:30px;
+}
+
+#teste2,
+#parte_2{
+background-color:white;
+width:100%;
+padding:30px;
+border-radius:20px;
+box-shadow:0 5px 15px rgba(0,0,0,.15);
+}
