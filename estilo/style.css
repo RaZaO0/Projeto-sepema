@@ -362,3 +362,7 @@ p {
     color: rgb(0, 0, 116);
     font-size: 20px;
 }
+
+#ESCOLHIDO {
+    border-bottom: solid 1px #FBBF24;
+}
