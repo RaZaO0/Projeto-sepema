@@ -44,20 +44,18 @@ nav a:hover {
 
 
 
-
-    
-
 #avalia {
     text-align: center;
     display: flex;
     justify-content: center;
     margin-top: 300px;
+    color: aliceblue;
 
 }
 
 
 #avaliacao{     
-    background-color: #55cfff;
+    background-color:#0F2A44;
     padding: 40px;
     border-radius: 15px;
     display: flex;
