@@ -58,15 +58,17 @@ async function carregarAlunos() {
         for (let aluno of alunos) {
             lista.innerHTML += `
             <div class="aluno">
-            <h2>${aluno.nome_a}</h2>
-            <p>Idade: ${aluno.data_a}</p>
-            <p>cpf: ${aluno.cpf_a}</p>
-            <p>nivel: ${aluno.ano_l}</p>
-            <p>Status: ${aluno.ativo ? "Ativo" : "Inativo"} </p>
+            <div id="divnomeADMIN"><h2 id="nomeAlunoADMIN">${aluno.nome_a}</h2></div>
+            <p class="padimin">Idade: ${
+                new Date(aluno.data_a).toLocaleDateString("pt-BR")
+            }</p>
+            <p class="padimin">cpf: ${aluno.cpf_a}</p>
+            <p class="padimin">nivel: ${aluno.ano_l}</p>
+            <p class="padimin">Status: ${aluno.ativo ? "Ativo" : "Inativo"} </p>
             <br>
-            <button onclick="alterarStatus(${aluno.id})">Alterar Status </button>
+            <button onclick="alterarStatus(${aluno.id})" id="botaoADmin">Alterar Status </button>
  
-            <button onclick="removerAluno(${aluno.id})">Remover</button>
+            <button onclick="removerAluno(${aluno.id})" id="botaoADmin">Remover</button>
             </div>
             `
         }
