@@ -58,6 +58,57 @@
             font-size: 1.35rem !important;
         }
     </style>
+    <script>
+        const apiKey = "aa0f266602354773d284d06ef91d9976";
+const lat = "-22.4132";
+const lon = "-45.5251";
+
+
+const url = `https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lon}&units=metric&lang=pt_br&appid=${apiKey}`;
+
+async function buscarClimaPiranguinho() {
+    try {
+        const resposta = await fetch(url);
+        const dados = await resposta.json();
+
+        if (resposta.ok) {
+          
+            document.getElementById("cidade").innerText = "Piranguinho - MG";
+            document.getElementById("temperatura").innerText = `${Math.round(dados.main.temp)}°C`;
+            document.getElementById("descricao").innerText = dados.weather[0].description;
+        } else {
+            console.error("Erro na API:", dados.message);
+        }
+    } catch (erro) {
+        console.error("Erro ao conectar na API:", erro);
+    }
+}
+buscarClimaPiranguinho();
+    </script>
+    <style> 
+    #cidade{
+        font-size: small;
+        color: #ffffff;
+    }
+    #temperatura{
+        font-size: small;
+        color: #ffffff;
+    }
+    #descricao{
+        font-size: small;
+        color: #ffffff;
+    }
+    #divTempo{
+        background: #5b7ca1;
+        border-radius: 15px;
+        padding: 10px;
+       display: flex;
+       justify-content: center;
+       flex-direction: row;
+     margin-right: 800px;
+   
+    }
+    </style>
 
 
 </head>
@@ -74,6 +125,11 @@
         <div id="txtfoto">
             <img id="loigo" src="../pasta fotos/logo-removebg-preview.png" alt="foto sepema">
             <h1 id="kayo">E.E sepema</h1>
+            <div id="divTempo">
+     <p class="cidade" id="cidade">Carregando...</p>
+    <p class="cidade" id="temperatura">--°C</p>
+    <p class="cidade" id="descricao">--</p>
+</div>
         </div>
 
         <nav>

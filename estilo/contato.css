@@ -223,3 +223,11 @@ nav{
 #ESCOLHIDO {
     border-bottom: solid 1px #FBBF24;
 }
+
+
+#mensagem {
+    background-color: #ffffff;
+    padding: 10px;
+    height: 100px;
+    width: 380px;
+}
