@@ -1,4 +1,4 @@
-const API = "http://localhost:3000";
+const API = "";
 
 //~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
@@ -22,13 +22,14 @@ async function cadastrarAluno(event) {
     const alunonv = {nome_a, data_a, telefone_a, cpf_a, bairro, nome_p, cpf_p, numero_p, ano_l}
 
     try {
-        const resposta = await fetch(`${API}/alunos`, {
-            method: "POST", //
-            headers: {
-                "Content-Type": "application/json"
-            },
-            body: JSON.stringify(alunonv)
-    });
+const resposta = await fetch(`/alunos`, {
+    method: "POST",
+    headers: {
+        "Content-Type": "application/json"
+    },
+    body: JSON.stringify(alunonv)
+});
+
     console.log("JS carregou4");
  
     const dados = await resposta.json();
@@ -50,7 +51,7 @@ async function carregarAlunos() {
  
     if (!lista) return;
     try {
-        const resposta = await fetch(`${API}/alunos`);
+        const resposta = await fetch(`/alunos`);
         const alunos = await resposta.json();
         lista.innerHTML = ""
         console.log("JS carregou2");
@@ -79,16 +80,19 @@ async function carregarAlunos() {
 }
 
 async function removerAluno(id) {
-    await fetch(`${API}/alunos/${id}`, {
+    await fetch(`/alunos/${id}`, {
         method: "DELETE"
-    })
+    });
+
     carregarAlunos();
 }
+
  
 async function alterarStatus(id) {
-    await fetch(`${API}/alunos/${id}`, {
+    await fetch(`/alunos/${id}`, {
         method: "PUT"
-    })
+    });
+
     carregarAlunos();
 }
 
@@ -107,7 +111,7 @@ console.log("Veio ate aq3333")
 
 async function carregartotal() {
 
-    const resposta = await fetch(`${API}/quantidade`);
+    const resposta = await fetch("/quantidade");
 
     const dados = await resposta.json();
 
@@ -129,7 +133,7 @@ async function autenticar(event) {
     const senha = document.getElementById("senha").value;
 
     try {
-        const resposta = await fetch(`${API}/admin`, {
+        const resposta = await fetch("/admin", {
             method: "POST",
             headers: {
                 "Content-Type": "application/json"
