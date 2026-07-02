@@ -6,9 +6,9 @@ const app = express();
 const path = require("path");
 app.use(cors());
 app.use(express.json());
-app.use(express.static(path.join(__dirname, "Pages")));
-app.use("/estilo", express.static(path.join(__dirname, "estilo")));
-app.use("/java", express.static(path.join(__dirname, "java")));
+app.use("/estilo", express.static(path.join(__dirname, "../estilo")));
+app.use("/java", express.static(path.join(__dirname, "../java")));
+app.use(express.static(path.join(__dirname, "../Pages")));
 
 app.use(express.static(path.join(__dirname, "../")));
 
