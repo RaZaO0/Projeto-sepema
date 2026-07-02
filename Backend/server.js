@@ -9,7 +9,7 @@ app.use(express.json());
 app.use("/estilo", express.static(path.join(__dirname, "../estilo")));
 app.use("/java", express.static(path.join(__dirname, "../java")));
 app.use(express.static(path.join(__dirname, "../Pages")));
-app.use("/pasta-fotos", express.static(path.join(__dirname, "pasta-fotos")));
+app.use("/pastafotos", express.static(path.join(__dirname, "../pasta-fotos")));
 
 
 const db = mysql.createConnection({
