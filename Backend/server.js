@@ -5,7 +5,7 @@ const mysql = require("mysql2");
 const app = express();
 app.use(cors());
 app.use(express.json());
-app.use(express.static("Pages"));
+app.use(express.static("."));
 
 const db = mysql.createConnection({
     host: "sepema-razao.g.aivencloud.com",
