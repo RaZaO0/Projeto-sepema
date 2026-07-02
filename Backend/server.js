@@ -198,8 +198,6 @@ app.get("/quantidade", (req, res) => {
 
 //~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-app.listen(3000, () => {
-    console.log("Servidor rodando em: ")
-    console.log("http://localhost:3000")
-})
-
+app.listen(process.env.PORT || 3000, () => {
+    console.log("Servidor rodando");
+});
