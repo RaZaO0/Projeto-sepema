@@ -10,7 +10,6 @@ app.use("/estilo", express.static(path.join(__dirname, "../estilo")));
 app.use("/java", express.static(path.join(__dirname, "../java")));
 app.use(express.static(path.join(__dirname, "../Pages")));
 
-app.use(express.static(path.join(__dirname, "../")));
 
 const db = mysql.createConnection({
     host: "sepema-razao.g.aivencloud.com",
@@ -21,6 +20,14 @@ const db = mysql.createConnection({
     ssl: {
         rejectUnauthorized: false
     }
+});
+
+db.connect((err) => {
+   if (err) {
+      console.log("ERRO BANCO:", err);
+   } else {
+      console.log("BANCO CONECTADO COM SUCESSO");
+   }
 });
 
 app.get("/", (req, res) => {
