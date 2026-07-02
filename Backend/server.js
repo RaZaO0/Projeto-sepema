@@ -4,11 +4,16 @@ const mysql = require("mysql2");
 const app = express();
 app.use(cors());
 app.use(express.json());
+
 const db = mysql.createConnection({
-   host: "localhost",
-   user: "root",
-   password: "",
-   database: "Escola"
+    host: "sepema-razao.g.aivencloud.com",
+    port: 10728,
+    user: "avnadmin",
+    password: "AVNS_szY4i4YDVP9zFe5p2ZI",
+    database: "defaultdb",
+    ssl: {
+        rejectUnauthorized: false
+    }
 });
 
 app.get("/", (req, res) => {
